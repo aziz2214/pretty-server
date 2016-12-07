@@ -1,0 +1,177 @@
+* {
+	padding:0;
+	margin:0;
+}
+
+body {
+	color: #333;
+	font: 14px Sans-Serif;
+	padding: 100px;
+	background: #eee;
+}
+
+h1 {
+	text-align: center;
+	padding: 20px 0 12px 0;
+	margin: 0;
+}
+h2 {
+	font-size: 16px;
+	text-align: center;
+	padding: 0 0 12px 0; 
+}
+
+#container {
+	box-shadow: 0 5px 10px -5px rgba(0,0,0,0.5);
+	position: relative;
+	background: white; 
+}
+
+table {
+	background-color: #F3F3F3;
+	border-collapse: collapse;
+	width: 100%;
+	margin: 15px 0;
+}
+
+th {
+	background-color: #AB47BC;
+	color: #FFF;
+	cursor: pointer;
+	padding: 5px 10px;
+}
+
+th small {
+	font-size: 15px; 
+}
+
+td, th {
+	text-align: left;
+}
+
+a {
+	text-decoration: none;
+}
+
+td a {
+	color: #663300;
+	display: block;
+	padding: 5px 10px;
+}
+th a {
+	padding-left: 0
+}
+
+td:first-of-type a {
+	background: url(./.images/file.png) no-repeat 10px 50%;
+	padding-left: 35px;
+}
+th:first-of-type {
+	padding-left: 35px;
+}
+
+td:not(:first-of-type) a {
+	background-image: none !important;
+} 
+
+tr:nth-of-type(odd) {
+	background-color: #E6E6E6;
+}
+
+tr:hover td {
+	background-color:#CACACA;
+}
+
+tr:hover td a {
+	color: #000;
+}
+
+
+
+
+#backbutton {
+    background-color: #7B1FA2; 
+    border-radius: 50%; 
+    border: none;
+    color: white;
+    padding: 10px 10px; 
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    position: absolute; 
+    right: 20px; 
+    bottom:40px; 
+    z-index: 10; 
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+button:hover { 
+    transform: scale(1.1); 
+    transition: all .2s ease-in-out; 
+}
+
+footer { 
+    text-align: center;
+    padding: 30px; 
+    background-color: #E0E0E0; 
+    width: 100%; 
+    display:block; 
+    position:absolute; 
+    bottom:0; 
+    left: 0; 
+}
+
+
+/* ----CSS LOADER ----- */ 
+
+#loader {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  z-index: 1;
+  width: 150px;
+  height: 150px;
+  margin: -75px 0 0 -75px;
+  border: 16px solid #f3f3f3;
+  border-radius: 50%;
+  border-top: 16px solid #AB47BC;
+  width: 60px;
+  height: 60px;
+  -webkit-animation: spin 1s linear infinite;
+  animation: spin 1s linear infinite;
+}
+
+@-webkit-keyframes spin {
+  0% { -webkit-transform: rotate(0deg); }
+  100% { -webkit-transform: rotate(360deg); }
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+/* Add animation to "page content" */
+.animate-bottom {
+  position: relative;
+  -webkit-animation-name: animatebottom;
+  -webkit-animation-duration: 1s;
+  animation-name: animatebottom;
+  animation-duration: 1s
+}
+
+@-webkit-keyframes animatebottom {
+  from { bottom:-100px; opacity:0 }
+  to { bottom:0px; opacity:1 }
+}
+
+@keyframes animatebottom {
+  from{ bottom:-100px; opacity:0 }
+  to{ bottom:0; opacity:1 }
+}
+
+#myDiv {
+  display: none;
+  text-align: center;
+}
